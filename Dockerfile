@@ -5,6 +5,5 @@ RUN apt-get install -y python-pip python-dev build-essential curl
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-EXPOSE 80
 ENTRYPOINT ["python"]
 CMD ["main.py"]
