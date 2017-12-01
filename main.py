@@ -29,7 +29,7 @@ class Predict(Resource):
     def post(self):
         return RESULT
 
-api.add_resource(Predict, '/vpredict', methods=['GET', 'POST'])
+api.add_resource(Predict, '/voice/predict', methods=['GET', 'POST'])
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0',port=10002)
